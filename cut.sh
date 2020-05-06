@@ -10,7 +10,23 @@
 # To add a new piece, copy a line and change name of the output file.
 ########
 
-rm ./output/pieces/*.mp4
+output_folder="output/pieces"
 
-ffmpeg -y -ss 00:00:02 -i src/watching-street-1.mp4  -t 4 ./output/pieces/01.mp4
-ffmpeg -y -ss 00:00:00 -i src/street-1.mp4  -t 4 ./output/pieces/02.mp4
+rm -rf output/pieces/*
+
+case "$1" in
+   --preview) source_folder="output/preview" ;;
+           *) source_folder="source_video" ;;
+     esac
+
+echo "Cutting files from '${source_folder}'"
+
+ffmpeg -y -ss 00:00:02 -i -i "${source_folder}/01-watching-street.mp4"  -t 4 "${output_folder}/01.mp4"
+ffmpeg -y -ss 00:00:00 -i "${source_folder}/02-street.mp4"  -t 4  "${output_folder}/02.mp4"
+ffmpeg -y -ss 00:00:00 -i "${source_folder}/03-street.mp4"  -t 4  "${output_folder}/03.mp4"
+
+# ninja: mirrors
+ffmpeg -y -ss 00:00:03 -i "${source_folder}/20-mirrors.mp4"  -t 3  "${output_folder}/20.mp4"
+
+# dance
+ffmpeg -y -ss 00:00:05 -i "${source_folder}/30-dance.mp4"  -t 20  "${output_folder}/30.mp4"
