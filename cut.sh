@@ -24,14 +24,13 @@ echo "Cutting files from '${source_folder}'"
 # watching street
 ffmpeg -y -ss 00:00:02 -i "${source_folder}/01-watching-street.mp4"  -t 4 "${output_folder}/01.mp4"
 ffmpeg -y -ss 00:00:00 -i "${source_folder}/02-street.mp4"  -t 4  "${output_folder}/02.mp4"
-ffmpeg -y -ss 00:00:00 -i "${source_folder}/03-street.mp4"  -t 4  "${output_folder}/03.mp4"
-ffmpeg -y -ss 00:00:02 -i "${source_folder}/04-watching-street.mp4"  -t 4 "${output_folder}/04.mp4"
 
 # robot
-ffmpeg -y -ss 00:00:02 -i "${source_folder}/10-robot.mp4"  -t 20 "${output_folder}/10.mp4"
+ffmpeg -y -ss 00:00:02 -i "${source_folder}/10-robot.mp4"  -t 20 "${output_folder}/05.mp4"
 
-
-# watching street
+# watching street again
+ffmpeg -y -ss 00:00:02 -i "${source_folder}/04-watching-street.mp4"  -t 4 "${output_folder}/06.mp4"
+ffmpeg -y -ss 00:00:00 -i "${source_folder}/03-street.mp4"  -t 4  "${output_folder}/07.mp4"
 
 # ninja: mirrors
 ffmpeg -y -ss 00:00:03 -i "${source_folder}/30-mirrors.mp4"  -t 3  "${output_folder}/30.mp4"
