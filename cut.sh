@@ -28,6 +28,8 @@ ffmpeg -y -ss 00:00:00 -i "${source_folder}/03-street.mp4"  -t 4  "${output_fold
 ffmpeg -y -ss 00:00:02 -i "${source_folder}/04-watching-street.mp4"  -t 4 "${output_folder}/04.mp4"
 
 # robot
+ffmpeg -y -ss 00:00:02 -i "${source_folder}/10-robot.mp4"  -t 20 "${output_folder}/10.mp4"
+
 
 # watching street
 
