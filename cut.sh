@@ -21,12 +21,25 @@ case "$1" in
 
 echo "Cutting files from '${source_folder}'"
 
+# watching street
 ffmpeg -y -ss 00:00:02 -i "${source_folder}/01-watching-street.mp4"  -t 4 "${output_folder}/01.mp4"
 ffmpeg -y -ss 00:00:00 -i "${source_folder}/02-street.mp4"  -t 4  "${output_folder}/02.mp4"
 ffmpeg -y -ss 00:00:00 -i "${source_folder}/03-street.mp4"  -t 4  "${output_folder}/03.mp4"
 
+# robot
+
+# watching street
+
 # ninja: mirrors
-ffmpeg -y -ss 00:00:03 -i "${source_folder}/20-mirrors.mp4"  -t 3  "${output_folder}/20.mp4"
+ffmpeg -y -ss 00:00:03 -i "${source_folder}/30-mirrors.mp4"  -t 3  "${output_folder}/30.mp4"
+
+# ninja: fight
 
 # dance
-ffmpeg -y -ss 00:00:05 -i "${source_folder}/30-dance.mp4"  -t 20  "${output_folder}/30.mp4"
+ffmpeg -y -ss 00:00:05 -i "${source_folder}/50-dance.mp4"  -t 20  "${output_folder}/50.mp4"
+
+# chorus dance
+
+# you wanna fight man?
+
+# chorus-without-music
