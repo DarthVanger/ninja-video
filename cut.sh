@@ -30,7 +30,7 @@ ffmpeg -y -ss 00:00:02 -i "${source_folder}/10-robot.mp4"  -t 20 "${output_folde
 
 # watching street again
 ffmpeg -y -ss 00:00:02 -i "${source_folder}/04-watching-street.mp4"  -t 4 "${output_folder}/06.mp4"
-ffmpeg -y -ss 00:00:00 -i "${source_folder}/03-street.mp4"  -t 4  "${output_folder}/07.mp4"
+ffmpeg -y -ss 00:00:07 -i "${source_folder}/05-street-moving.mp4"  -t 4  "${output_folder}/08.mp4"
 
 # ninja: mirrors
 ffmpeg -y -ss 00:00:03 -i "${source_folder}/30-mirrors.mp4"  -t 2  "${output_folder}/20.mp4"
