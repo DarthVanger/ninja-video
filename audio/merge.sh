@@ -5,7 +5,15 @@
 # Write merged video to ./merged.mp4
 ########
 
-ffmpeg -y -f concat -i concat-list.txt output/merged.mp3
+source_folder="output/pieces"
+output_folder="output"
+
+for filename in "${source_folder}"/*.mp3; do
+  echo "file $filename" >> concat-list.txt
+done
+
+ffmpeg -y -f concat -i concat-list.txt "${output_folder}"/merged.mp3
 
 echo "Concatenated videos list:"
 cat concat-list.txt
+rm concat-list.txt
