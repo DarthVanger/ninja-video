@@ -28,7 +28,7 @@ ffmpeg -y -ss 00:00:00 -i "output/04-story.mp3" -t 21 "${output_folder}/05-story
 ffmpeg -y -ss 00:00:00 -i "output/05-story.mp3" -t 21 "${output_folder}/06-story.mp3"
 
 ## silence from 00:42 to 01:01
-ffmpeg -y -ss 00:00:00 -i "output/silence.mp3" -t 19.2 "${output_folder}/07-silence.mp3"
+#ffmpeg -y -ss 00:00:00 -i "output/silence.mp3" -t 19.2 "${output_folder}/07-silence.mp3"
 
 ## ninja track for dance :)
-ffmpeg -y -ss 00:02:51.2 -i "${source_folder}/ninja.mp3" -t 40 "${output_folder}/08-ninja.mp3"
+#ffmpeg -y -ss 00:02:51.2 -i "${source_folder}/ninja.mp3" -t 40 "${output_folder}/08-ninja.mp3"
