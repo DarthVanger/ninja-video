@@ -17,7 +17,12 @@ rm -rf output/pieces/*
 
 ## story
 ffmpeg -y -ss 00:00:00 -i "output/01-story.mp3" "${output_folder}/01-story.mp3"
+ffmpeg -y -ss 00:00:00 -i "output/02-story.mp3" "${output_folder}/02-story.mp3"
+
+# silence from 7 sec to 28
+ffmpeg -y -ss 00:00:00 -i "output/silence.mp3" -t 21 "${output_folder}/03-silence.mp3" 
 
 ## story 2
-ffmpeg -y -ss 00:00:00 -i "output/02-story.mp3" "${output_folder}/02-story.mp3"
-ffmpeg -y -ss 00:00:00 -i "output/silence.mp3" -t 4 "${output_folder}/03-silence.mp3"
+ffmpeg -y -ss 00:00:00 -i "output/03-story.mp3" -t 21 "${output_folder}/04-story.mp3" 
+ffmpeg -y -ss 00:00:00 -i "output/04-story.mp3" -t 21 "${output_folder}/05-story.mp3" 
+ffmpeg -y -ss 00:00:00 -i "output/05-story.mp3" -t 21 "${output_folder}/06-story.mp3" 
