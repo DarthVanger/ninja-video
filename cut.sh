@@ -39,6 +39,9 @@ ffmpeg -y -ss 00:00:03 -i "${source_folder}/21-mirrors.mp4"  -t 2  "${output_fol
 # ninja: fight
 ffmpeg -y -ss 00:00:13 -i "${source_folder}/ninja-fight.mp4"  -t 21.5  "${output_folder}/30.mp4"
 
+# you got a problem?
+ffmpeg -y -ss 00:00:05 -i "${source_folder}/problem.mp4"  -t 12  "${output_folder}/40.mp4"
+
 # dance
 ffmpeg -y -ss 00:00:04 -i "${source_folder}/50-dance.mp4"  -t 40  "${output_folder}/50.mp4"
 
