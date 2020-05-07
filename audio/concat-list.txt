@@ -1,2 +1,3 @@
-file output/pieces/01-story.mp3
+file output/pieces/01-silence.mp3
 file output/pieces/02-story.mp3
+file output/pieces/03-story.mp3
