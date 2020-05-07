@@ -42,11 +42,5 @@ ffmpeg -y -ss 00:00:13 -i "${source_folder}/ninja-fight.mp4"  -t 21.5  "${output
 # you got a problem?
 ffmpeg -y -ss 00:00:05 -i "${source_folder}/problem.mp4"  -t 12  "${output_folder}/40.mp4"
 
-# dance
-ffmpeg -y -ss 00:00:00 -i "output/dance-with-music.mp4"  -t 39  "${output_folder}/50.mp4"
-
-# chorus dance
-
-# you wanna fight man?
-
-# chorus-without-music
+# dance with chorus
+ffmpeg -y -ss 00:00:00 -i "output/dance-with-music.mp4"  -t 63.5  "${output_folder}/50.mp4"
